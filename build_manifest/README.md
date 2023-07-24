@@ -20,7 +20,7 @@
 ### 文件保存位置
 如果找不到保存的文件，请使用任意文件管理器找到浏览器的默认下载文件保存位置：
 - Android:
-1. /storage/emulated/0/Download/
+1. /storage/emulated/0/Download
 2. 或者：内置存储/Download/
 - IOS: 待完善
 - Windows: 待完善
