@@ -19,7 +19,9 @@
 我对于html也不太熟悉，但是就是想做这么一个工具，力不从心就是了(:，我也正在学习，所以大佬请多包涵。
 ### 文件保存位置
 如果找不到保存的文件，请使用任意文件管理器找到浏览器的默认下载文件保存位置：
-- Android: /storage/emulated/0/Download/
+- Android:
+1. /storage/emulated/0/Download/
+2. 或者：内置存储/Download/
 - IOS: 待完善
 - Windows: 待完善
 ## 反馈或帮助
