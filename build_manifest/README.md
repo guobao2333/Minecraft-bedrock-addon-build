@@ -26,5 +26,5 @@
 - Windows: 待完善
 ## 反馈或帮助
 - 直接通过github提交问题或讨论
-- 加入[QQ群319756047](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hcGB26TBVYbVIS6TkZ5uvBwghyx3wqIz&authKey=BgG4%2BARj6b9ym9Cf7llJNV4Bgo97dW3PRqa127ZUdyWNo81rF7vveSAVQPt7syZ8&noverify=0&group_code=319756047)(推荐，但很少看)
+- 加入[QQ交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hcGB26TBVYbVIS6TkZ5uvBwghyx3wqIz&authKey=BgG4%2BARj6b9ym9Cf7llJNV4Bgo97dW3PRqa127ZUdyWNo81rF7vveSAVQPt7syZ8&noverify=0&group_code=319756047)(推荐，但很少看)
 - 通过我的[bilibili主页](https://m.bilibili.com/space/1975312515)私信我(最容易看到)
