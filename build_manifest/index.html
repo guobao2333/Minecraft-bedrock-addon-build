@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>manifest.json 生成</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+	<div class="container">
+		<h1>manifest.json 生成</h1>
+		<h5>页面版本 v2.0.1-beta by 果宝</h5>
+		<p>适用于Minecraft(我的世界)bedrock(基岩版)</p>
+		<p>推荐游戏版本：1.19+</p><hr>
+		<p>文字前带有<span>*</span>为必填项</p><br>
+		<form onsubmit="buildManifest()">
+			<div><span>*</span>格式版本：<input type="radio" name="formatVersion" id="1" value="1"><label for="1">1(1.12及以下)</label><input type="radio" name="formatVersion" id="2" value="2" checked><label for="2">2(1.13及以上)</label></div>
+
+			<div><span>*</span>附加包名称：</div>
+			<input type="text" id="packName" placeholder="我的附加包" value="我的附加包" required>
+
+			<div>附加包描述：</div>
+			<input type="text" id="packDescription" placeholder="\n为换行符，§加上数字或字母为字体添加颜色" style="width: 300px; word-wrap: word-wrap">
+
+			<div><span>*</span>附加包唯一标识符(uuid)：
+			<input type="text" id="packUUID" placeholder="留空自动生成"></div>
+
+			<from><div><span>*</span>附加包版本号：
+			<input type="number" id="packV1" class="version" value="1" placeholder="大版本" max="99"><span>,</span>
+			<input type="number" id="packV2" class="version" value="0" placeholder="小版本" max="999"><span>,</span>
+			<input type="number" id="packV3" class="version" value="0" placeholder="补丁号" max="999"><br></div></from>
+
+
+			<from><div><span>*</span>最小支持游戏版本号：
+			<input type="text" id="minEngineVersion" value="1.20.0" class="autofill-input" pattern="\d{1,3}(?:\.\d{1,3}){2}" required placeholder="例如 1.20.0" title="最小支持游戏版本号必须由三个数字组成，如 1.20.0" list="mvers">
+			<datalist id="mvers">
+				<option value="1.16.0">
+				<option value="1.17.0">
+				<option value="1.18.0">
+				<option value="1.19.0">
+				<option value="1.20.0">
+			</datalist></div></from>
+
+			<from><div><span>*</span>模块版本号：</div>
+			<input type="text" id="moduleVersion" value="1.0.0" class="autofill-input" pattern="\d{1,3}(?:\.\d{1,3}){2}" placeholder="例如 1.0.0" required title="版本号必须由三个数字组成，如 1.0.0" list="mevers">
+			<datalist id="mevers">
+				<option value="0.1.0">
+				<option value="1.0.0">
+			</datalist></from>
+
+			<div>附加包类型：
+			<label><input type="radio" name="moduleType" value="data" checked>data (行为)</label>
+			<label><input type="radio" name="moduleType" value="script">script (脚本)</label>
+			</div>
+			<div><hr><p>以下内容暂未开发完毕</p><hr></div>
+
+			<div class="hide" style="display: none">
+				<div><span>*</span>脚本语言：</div>
+				<input type="text" id="moduleLanguage" placeholder="javascript">
+
+				<!-- 类为hide的部分默认隐藏，当附加包类型值为script时显示，否则隐藏 -->
+
+				<div><span>*</span>脚本存放路径：</div>
+				<input type="text" id="moduleEntry" placeholder="script/index.js">
+			</div>
+
+			<div><span>*</span>模块uuid：</div>
+			<input type="text" id="moduleUUID" placeholder="留空自动生成">
+
+			<div>模块描述：</div>
+			<input type="text" id="moduleDescription" placeholder="\n为换行符，§加上数字或字母为字体添加颜色">
+
+			<!-- 依赖包 -->
+			<div><label><input type="checkbox" id="useDependencyPack">使用依赖包</label></div>
+			<div class="pack" style="display: none">
+				<div>依赖包uuid：</div>
+				<input type="text" id="dependencyPackUUID" placeholder="资源包或其他包header部分的UUID">
+
+				<div>依赖包版本：</div>
+				<input type="text" id="dependencyPackVersion" placeholder="该依赖包header部分的版本号" title="版本号必须由三个数字组成，如 1.0.0">
+			</div>
+
+			<!-- server模块 -->
+			<div class="checkbox" style="display: none"><label><input type="checkbox" id="useServer">使用server模块</label></div>
+			<div class="server" style="display: none">
+				<div>依赖模块名称：
+				<mark>@minecraft/server</mark></div>
+				<input type="text" id="serverModule" value="@minecraft/server" readonly>
+
+				<div>server模块版本：</div>
+				<input type="text" id="serverModuleVersion" placeholder="1.1.0/1.2.0/1.3.0-beta" value="1.3.0-beta">
+			</div>
+
+			<!-- UI模块 -->
+			<div class="checkbox" style="display: none"><label><input type="checkbox" id="useUi">使用server-ui模块</label></div>
+			<div class="ui" style="display: none">
+				<div>依赖模块名称：
+				<mark>@minecraft/server-ui</mark></div>
+				<input type="text" id="uiModule" value="@minecraft/server-ui" readonly>
+
+				<div>UI模块版本：</div>
+				<input type="text" id="uiModuleVersion" placeholder="1.0.0/1.1.0-beta" value="1.1.0-beta">
+			</div>
+
+			<!-- gametest模块 -->
+			<div class="checkbox" style="display: none"><label><input type="checkbox" id="useGametest">使用server-gametest模块</label></div>
+			<div class="gametest" style="display: none">
+				<div>依赖模块名称：
+				<mark>@minecraft/server-gametest</mark></div>
+				<input type="text" id="gametestModule" value="@minecraft/server-gametest" readonly>
+
+				<div>gametest模块版本：</div>
+				<input type="text" id="gametestModuleVersion" placeholder="1.0.0-beta" value="1.0.0-beta">
+			</div>
+
+			<button type="submit" onclick="buildManifest(event)">预览文件</button>
+			<!-- 点击预览文件按钮后将处理完的内容放到textarea里 -->
+			<button class="copyButton" onclick="copyText()" style="display: none">复制内容</button>
+			<!-- 默认隐藏，点击预览按钮后显示，点击复制按钮将textarea里的内容复制到剪切板 -->
+			<button onclick="saveJSON()" download="manifest.json" style="display: none">下载文件</button>
+			<!-- 默认隐藏，点击预览文件后显示下载文件按钮，点击后打包textarea里的内容为json并保存到本地 -->
+		</form>
+
+		<!-- 默认隐藏，当点击预览文件按钮时显示textarea -->
+		<textarea id="text" rows="35" cols="20" style="display: none"></textarea>
+		<footer><p>此页面依旧可能存在bug，发现bug请反馈@果宝</p>
+		<p>2023 by @果宝</p></footer>
+	</div>
+<script type="text/javascript" src="index.js">
+<noscript>
+<p>您的浏览器不支持或您禁止了脚本。</p>
+<p>因此无法正常使用我们的网页。</p>
+<style>
+#container { display:none }
+</style>
+</noscript>
+</body>
+
+</html>
