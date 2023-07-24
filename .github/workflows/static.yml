@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upoad entire repository
-          path: 'build_manifest/'
+          path: 'build_manifest/.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
