@@ -2,7 +2,7 @@
 
 库如其名，通过使用html网页来制作一个addon附加包。其实也有更好的方式和软件来制作，但我的初衷不过只是拿这个练练手而已。
 ## 所有内容
-- [使用网页简单的构建一个manifest.json](build_manifest/README.md)
+- [使用网页简单的构建一个manifest.json](build_manifest/)
 - **未来可能**更新内容
   - 构建物品json
   - 构建方块json
