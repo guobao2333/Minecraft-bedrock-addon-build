@@ -8,10 +8,12 @@
   - 构建方块json
 - 敬请期待 ~~说不定不更了呢~~
 ## 一些问题
-每次解决一个问题可能耗费的时间长短不一，而且会**经常忘事**，所以不要指望我能够快速修复bug。
+每次解决一个问题可能耗费的时间长短不一，而且**经常会忘事**，所以不要指望我能够快速修复bug。
 ## 建议、反馈或帮助
 - 直接通过github提交问题或讨论
 - 加入[QQ交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hcGB26TBVYbVIS6TkZ5uvBwghyx3wqIz&authKey=BgG4%2BARj6b9ym9Cf7llJNV4Bgo97dW3PRqa127ZUdyWNo81rF7vveSAVQPt7syZ8&noverify=0&group_code=319756047)(推荐,但很少看)
 - 通过我的[b站主页](https://m.bilibili.com/space/1975312515)私信我（最容易看到）
 ## 如何向此项目贡献？
-通过Pull requests提交你的请求。
+1. 打开`pre`分支。
+2. 点击`Pull requests`拉取并提交你的请求。
+3. 等待管理员合并。
