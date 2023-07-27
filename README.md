@@ -1,6 +1,10 @@
 [![b站主页](https://img.shields.io/badge/果宝的b站主页-666666?logo=bilibili&labelColor=FFC0CB)](https://m.bilibili.com/space/1975312515) [![此项目](https://img.shields.io/badge/github项目-666666?logo=github)](https://github.com/guobao2333/Minecraft-bedrock-addon-build/tree/main/README.md)
 
 库如其名，通过使用html网页来制作一个addon附加包。其实也有更好的方式和软件来制作，但我的初衷不过只是拿这个练练手而已。
+
+查看此项目[最新预览版](https://github.com/guobao2333/Minecraft-bedrock-addon-build/tree/preview/)
+
+_**最新预览版拥有最新的内容，但同时可能存在更多新的bug。**_
 ## 所有内容
 - [使用网页简单的构建一个manifest.json](build_manifest/)
 - **未来可能**更新内容
