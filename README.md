@@ -2,15 +2,20 @@
 
 库如其名，通过使用html网页来制作一个addon附加包。其实也有更好的方式和软件来制作，但我的初衷不过只是拿这个练练手而已。
 
-查看此项目[最新预览版](https://github.com/guobao2333/Minecraft-bedrock-addon-build/tree/preview/)
+- 查看此存储库[最新预览版](https://github.com/guobao2333/Minecraft-bedrock-addon-build/tree/preview/)
 
-_**最新预览版拥有最新的内容，但同时可能存在更多新的bug。**_
+![alert-fill](https://github.com/guobao2333/Minecraft-bedrock-addon-build/assets/125613427/f57ab5f5-2416-43b1-ad88-a490c638c961) **注意：**
+>**最新预览版拥有最新的内容，但同时可能存在更多新的bug！**
+
 ## 所有内容
 - [使用网页简单的构建一个manifest.json](build_manifest/)
 - **未来可能**更新内容
   - 构建物品json
   - 构建方块json
-- 敬请期待 ~~说不定不更了呢~~
+
+- 更多内容敬请期待
+
+~~说不定不更了呢~~
 ## 一些问题
 每次解决一个问题可能耗费的时间长短不一，而且**经常会忘事**，所以不要指望我能够快速修复bug。
 ## 建议、反馈或帮助
@@ -21,3 +26,5 @@ _**最新预览版拥有最新的内容，但同时可能存在更多新的bug�
 1. 打开`preview`分支。
 2. 点击`Pull requests`拉取并提交你的请求。
 3. 等待管理员合并。
+
+- 剩下内容请等待完善
