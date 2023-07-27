@@ -8,10 +8,11 @@
 >**最新预览版拥有最新的内容，但同时可能存在更多新的bug！**
 
 ## 内容目录
-- [使用网页简单的构建一个manifest.json](build_manifest/)
+- [使用html网页简单的构建一个manifest.json](build_manifest/)
 - **未来可能**更新内容
   - 构建物品json
   - 构建方块json
+  - 构建合成表json
 
 - 更多内容敬请期待
 
@@ -26,5 +27,7 @@
 1. 打开`preview`分支。
 2. 点击`Pull requests`拉取并提交你的请求。
 3. 等待管理员合并。
+## license （许可证）
+[MIT license](./LICENSE)
 
 - 剩下内容请等待完善
