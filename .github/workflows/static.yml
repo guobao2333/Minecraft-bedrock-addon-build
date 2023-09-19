@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: 将 构建manifest 静态网页部署至pages
+name: 构建manifest
 
 on:
   # Runs on pushes targeting the default branch
@@ -25,7 +25,7 @@ jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
-      name: 构建manifest HTML
+      name: 构建manifest
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
