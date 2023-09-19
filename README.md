@@ -17,7 +17,7 @@
 
 ~~说不定不更了呢~~
 ## 更新问题
-每次解决一个问题可能耗费的时间长短不一，而且**经常会忘事**，所以不要指望我能够快速修复bug。
+每次解决一个问题可能耗费的时间长短不一，而且**我经常忘事**，所以不要指望我能够快速修复bug。
 ## 建议、反馈或帮助
 - 直接通过github提交问题或讨论
 - 加入[QQ交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=hcGB26TBVYbVIS6TkZ5uvBwghyx3wqIz&authKey=BgG4%2BARj6b9ym9Cf7llJNV4Bgo97dW3PRqa127ZUdyWNo81rF7vveSAVQPt7syZ8&noverify=0&group_code=319756047)(推荐,但很少看)
