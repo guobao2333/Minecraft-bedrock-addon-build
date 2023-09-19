@@ -1,4 +1,4 @@
-[![b站主页](https://img.shields.io/badge/果宝的b站主页-666666?logo=bilibili&labelColor=FFC0CB)](https://m.bilibili.com/space/1975312515) [![此项目](https://img.shields.io/badge/github项目-666666?logo=github)](https://github.com/guobao2333/Minecraft-bedrock-addon-build/tree/main/README.md) [![存储库网站](https://github.com/guobao2333/Minecraft-bedrock-addon-build/actions/workflows/jekyll-pages.yml/badge.svg?branch=preview)](https://github.com/guobao2333/Minecraft-bedrock-addon-build/actions/workflows/jekyll-pages.yml)
+[![b站主页](https://img.shields.io/badge/果宝的b站主页-666666?logo=bilibili&labelColor=FFC0CB)](https://m.bilibili.com/space/1975312515) [![此项目](https://img.shields.io/badge/github项目-666666?logo=github)](https://github.com/guobao2333/Minecraft-bedrock-addon-build/tree/main/README.md) [![存储库网站](https://github.com/guobao2333/Minecraft-bedrock-addon-build/actions/workflows/jekyll-pages.yml/badge.svg?branch=preview)](https://guobao2333.github.io/Minecraft-bedrock-addon-build/)
 
 库如其名，通过使用html网页来制作一个addon附加包。其实也有更好的方式和软件来制作，但我的初衷不过只是拿这个练练手而已。虽然如此，但我也会尽力更新的！
 
