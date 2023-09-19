@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: 在线网站
+name: 将页面通过jekyll部署
 
 on:
   # Runs on pushes targeting the default branch
@@ -41,7 +41,8 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: 存储库页面
+    # 对外显示名称
+      name: 在线页面
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
